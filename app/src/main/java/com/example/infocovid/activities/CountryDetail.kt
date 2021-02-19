@@ -25,6 +25,7 @@ class CountryDetail : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun setUpPage(country: Country){
+        country_name.text = country.country
         continent.text = country.continent
         population.text = "Population: ${country.population}"
         cases_tv.text = country.cases.toString()
